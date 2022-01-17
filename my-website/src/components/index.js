@@ -1,0 +1,1 @@
+export { MyBio } from './bio';
