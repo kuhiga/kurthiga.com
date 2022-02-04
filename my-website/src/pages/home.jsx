@@ -1,27 +1,43 @@
 import styled from '@emotion/styled';
-import { MyBio } from '../components/index';
+import { MyBio, PageBackground, MenuBar } from '../components/index';
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
 
 const StyledBody = styled.body`  
   background-color: #010714;
   color:#cdd9e9;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-top: 100px;
+  padding: 0 10% 0 10%;
+  padding-top: 50px;
   text-align: left;
-  font-size: 16px;
+  font-size: 22px;
   line-height 1.35;
-  font-family: Gotham,Helvetica Neue,Helvetica,Arial,sans-serif;
-  height: 100%;
+  font-family: Gotham;
+  height: 100vh;
   position: absolute;
   left: 0;
+  top: 0;
   width: 100%;
-  overflow: hidden;
+  margin: 0 0 0 0 !important;
+  overflow-x: hidden;
+  z-index: 1;
 `;
 
 export default function Home() {
   return (
     <StyledBody>
-        <MyBio />
+      <Box>
+        <Grid container spacing={9} >
+          <Grid item xs={12}> 
+            <MenuBar />
+          </Grid>
+          <Grid item xs={6}> 
+            <MyBio />
+          </Grid>
+          <Grid item xs={6}> 
+            <PageBackground />
+          </Grid>
+        </Grid>
+      </Box>
     </StyledBody>   
   )
 }
