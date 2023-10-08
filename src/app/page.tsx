@@ -20,7 +20,7 @@ const Burning = () => {
             </span>
             is under construction.
           </h1>
-          <h2>Here is some content:</h2>
+          <h2>Here are some things:</h2>
           <div className="grid gap-4 gap-y-10 grid-cols-2">
             <Image src={"/views.JPG"} alt={"views"} width={300} height={50} />
             <Image src={"/tree.JPG"} alt={"tree"} width={300} height={50} />
