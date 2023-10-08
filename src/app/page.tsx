@@ -1,39 +1,48 @@
-"use client";
-import { GLTF, GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
-import SceneInit from "./lib/sceneInit";
-import { useEffect } from "react";
-export default function Home() {
-  useEffect(() => {
-    const test = new SceneInit("myThreeJsCanvas");
-    test.initialize();
-    test.animate();
+import Image from "next/image";
+import Link from "next/link";
 
-    let loadedModel: GLTF;
-    const glftLoader = new GLTFLoader();
-    glftLoader.load("/assets/japanese_box/scene.gltf", (gltfScene) => {
-      loadedModel = gltfScene;
-
-      gltfScene.scene.rotation.y = Math.PI / 8;
-      gltfScene.scene.position.y = 3;
-      gltfScene.scene.scale.set(10, 10, 10);
-      if (test.scene) {
-        test.scene.add(gltfScene.scene);
-      }
-    });
-
-    const animate = () => {
-      if (loadedModel) {
-        loadedModel.scene.rotation.x += 0.001;
-        loadedModel.scene.rotation.y += 0.001;
-        loadedModel.scene.rotation.z += 0.001;
-      }
-      requestAnimationFrame(animate);
-    };
-    animate();
-  }, []);
+const Burning = () => {
   return (
-    <main overscroll-none>
-      <canvas id="myThreeJsCanvas" />
-    </main>
+    <div className="flex xs:flex-col-reverse sm:flex-col-reverse md:flex-row m-5">
+      <Image
+        src={"/burningdesireTP.png"}
+        alt={"burning desire"}
+        width="614"
+        height="1952"
+      />
+      <div className="flex justify-start pt-20 text-left align-middle w-full h-128">
+        <div className="flex flex-col m-w-md gap-y-10">
+          <h1>Hello, my name is Kurt!</h1>
+          <h1>
+            I’m a full stack engineer at Asurion, specializing in building
+            mobile and web applications.
+          </h1>
+          <h1>
+            Some tools I specialize in are React, TypeScript, Node, and AWS.
+          </h1>
+          <h1>I love traveling and listening to music.</h1>
+          <h1>
+            This
+            <span className="text-blue-500 hover:text-blue-700">
+              <Link href="/space"> link </Link>
+            </span>
+            is under construction.
+          </h1>
+          <h2>Here are some photos I like</h2>
+          <div className="grid gap-4 gap-y-10 grid-cols-2">
+            <Image src={"/views.JPG"} alt={"views"} width={300} height={50} />
+            <Image src={"/tree.JPG"} alt={"tree"} width={300} height={50} />
+            <Image src={"/cars.JPG"} alt={"cars"} width={300} height={50} />
+            <Image
+              src={"/flower.JPG"}
+              alt={"flowers"}
+              width={300}
+              height={50}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   );
-}
+};
+export default Burning;
