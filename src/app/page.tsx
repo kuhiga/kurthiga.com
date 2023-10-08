@@ -16,7 +16,7 @@ const Burning = () => {
           <h1>
             This
             <span className="text-blue-500 hover:text-blue-700">
-              <Link href="/space"> link </Link>
+              <Link href="/space"> space </Link>
             </span>
             is under construction.
           </h1>
