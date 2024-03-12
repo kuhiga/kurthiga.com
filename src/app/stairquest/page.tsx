@@ -68,6 +68,17 @@ export default function Home() {
           </ul>
         </section>
         <section className="mt-6">
+          <h2 className="text-2xl font-semibold text-indigo-700">✉️Support</h2>
+          <p className="mt-2 text-gray-700">
+            If you have any questions or need support, please don`t hesitate to
+            contact me by sending me an{" "}
+            <a href="mailto:kurthigaa@gmail.com" className="text-blue-700">
+              email
+            </a>
+            .
+          </p>
+        </section>
+        <section className="mt-6">
           <h2 className="text-2xl font-semibold text-indigo-700">
             Privacy Policy
           </h2>
