@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 
 export default function Home() {
   return (
@@ -34,12 +33,12 @@ export default function Home() {
           </h2>
           <p className="mt-2 text-gray-700">
             📊 Check Out Your Past Workouts: See how you did and feel free to
-            make your next workouts harder or easier. It's all about finding
-            what's best for you.
+            make your next workouts harder or easier. It`s all about finding
+            what`s best for you.
           </p>
           <p className="mt-2 text-gray-700">
             🏁 Update Your Goals: If your goals feel too easy or too tough,
-            change them up. It's important to keep things challenging but
+            change them up. It`s important to keep things challenging but
             doable.
           </p>
           <p className="mt-2 text-gray-700">
@@ -57,7 +56,7 @@ export default function Home() {
           </p>
           <ul className="list-disc pl-5 mt-2 text-gray-700">
             <li>
-              Check the machine before use to ensure it's in good working
+              Check the machine before use to ensure it`s in good working
               condition.
             </li>
             <li>Wear appropriate footwear for support and cushioning.</li>
