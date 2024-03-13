@@ -83,7 +83,9 @@ export default function Home() {
             Privacy Policy
           </h2>
           <p className="mt-2 text-gray-700">
-            No data of any kind is collected, shared, or stored.
+            The following data may be collected but is not linked to your
+            identity: Usage Data, Diagnostics. These are collected in order to
+            improve the app experience and are not shared.
           </p>
         </section>
       </main>
