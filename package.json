@@ -7,11 +7,12 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
-    "preview": "astro preview",
+    "preview": "deno run --allow-net --allow-read --allow-env ./dist/server/entry.mjs",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/check": "^0.5.9",
+    "@astrojs/deno": "^5.0.1",
     "@astrojs/tailwind": "^5.1.0",
     "@tabler/icons": "^3.0.2",
     "astro": "^4.5.3",
