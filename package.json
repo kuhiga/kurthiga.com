@@ -1,5 +1,5 @@
 {
-  "name": "portofolio",
+  "name": "portfolio",
   "type": "module",
   "version": "0.0.1",
   "license": "Apache-2.0",
@@ -7,13 +7,13 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
-    "preview": "deno run --allow-net --allow-read --allow-env ./dist/server/entry.mjs",
+    "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/check": "^0.5.9",
-    "@astrojs/deno": "^5.0.1",
     "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/vercel": "^7.5.0",
     "@tabler/icons": "^3.0.2",
     "astro": "^4.5.3",
     "sharp": "^0.33.2",
