@@ -28,21 +28,18 @@ const posts = (await getCollection("posts")).sort(function (
           <div class="col-span-2 flex flex-col gap-6 md:gap-8 my-auto">
             <h1 class="text-3xl">Hi, I’m {Config.me.name.split(" ")[0]}</h1>
             <h2 class="w-auto sm:w-[85%] md:w-[90%] leading-6">
-              I am a <strong class="font-normal text-primary"
-                >{Config.me.job}</strong
-              > with over
-              <strong class="font-normal text-primary">{years} years</strong> of
-              experience. I am currently working with<strong
-                class="font-normal text-primary">
+              I am a <strong class="font-bold">{Config.me.job}</strong> who enjoys
+              creating products that adds convenience to the lives of family, friends,
+              and beyond. I am currently working with<strong class="font-bold">
                 {Config.me.stack}</strong
-              >.
+              > technologies.
               <!-- Outside of programming I like to {Config.me.hobby}. -->
             </h2>
             <div class="custom-breadcrumbs">
               <ul>
                 {
                   Object.keys(Config.socials).map((social) => (
-                    <li>
+                    <li class="text-primary">
                       <a
                         href={
                           Config.socials[social as keyof typeof Config.socials]
