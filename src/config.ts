@@ -33,7 +33,6 @@ export const Config: IConfig = {
     projectLink: "https://github.com/kuhiga?tab=repositories",
   },
   socials: {
-    twitter: "https://twitter.com/JohnDoe",
     github: "https://github.com/kuhiga",
   },
   projects: {
