@@ -28,7 +28,7 @@ export const Config: IConfig = {
     name: "Kurt H.",
     job: "software engineer",
     started: "2021-07-01",
-    stack: "web and ios",
+    stack: "web and mobile",
     hobby: "",
     projectLink: "https://github.com/kuhiga?tab=repositories",
   },
