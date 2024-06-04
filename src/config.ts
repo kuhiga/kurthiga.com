@@ -26,7 +26,7 @@ interface IConfig {
 export const Config: IConfig = {
   me: {
     name: "Kurt H.",
-    job: "software engineer",
+    job: "full stack software engineer",
     started: "2021-07-01",
     stack: "web and mobile",
     hobby: "",
@@ -34,6 +34,7 @@ export const Config: IConfig = {
   },
   socials: {
     GitHub: "https://github.com/kuhiga",
+    LinkedIn: "https://www.linkedin.com/in/kurthiga/",
   },
   projects: {
     StairQuest: {
