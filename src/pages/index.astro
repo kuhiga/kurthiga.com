@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import FloatingBox from "../components/SmallBox.astro";
-import { Picture } from "astro:assets";
+import { Image } from "astro:assets";
 import iconImage from "../assets/icon.png";
 import { Config } from "../config";
 
@@ -60,12 +60,7 @@ const posts = (await getCollection("posts")).sort(function (
           <div class="ml-auto hidden sm:block">
             <div class="avatar">
               <div class="w-60 rounded">
-                <Picture
-                  src={iconImage}
-                  formats={["avif", "webp"]}
-                  alt="Profile icon"
-                  loading="eager"
-                />
+                <Image src={iconImage} alt="Profile icon" loading="eager" />
               </div>
             </div>
           </div>
