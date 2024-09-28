@@ -11,19 +11,19 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.9",
+    "@astrojs/check": "^0.9.3",
     "@astrojs/tailwind": "^5.1.0",
-    "@astrojs/vercel": "^7.5.0",
-    "@tabler/icons": "^3.0.2",
-    "astro": "^4.11.0",
-    "sharp": "^0.33.2",
-    "tailwindcss": "^3.4.4",
-    "typescript": "^5.4.2"
+    "@astrojs/vercel": "^7.8.0",
+    "@tabler/icons": "^3.12.0",
+    "astro": "^4.14.5",
+    "sharp": "^0.33.5",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.10",
-    "@types/node": "^20.11.28",
-    "daisyui": "^4.7.3",
-    "vite": "^5.3.1"
+    "@tailwindcss/typography": "^0.5.14",
+    "@types/node": "^22.5.0",
+    "daisyui": "^4.12.10",
+    "vite": "^5.4.2"
   }
 }
