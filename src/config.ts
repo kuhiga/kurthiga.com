@@ -54,3 +54,49 @@ export const Config: IConfig = {
     image: icon,
   },
 };
+
+interface Tool {
+  title: string;
+}
+
+interface Job {
+  startYear: string;
+  endYear: string;
+  company: string;
+  jobPosition: string;
+  description: string;
+}
+export const jobs: Job[] = [
+  {
+    startYear: "2024",
+    endYear: "Present",
+    company: "FloQast",
+    jobPosition: "Software Engineer",
+    description:
+      "Building ERP integrations and scalable microservices for FloQast, enhancing workflows for accounting teams.",
+  },
+  {
+    startYear: "2021",
+    endYear: "2024",
+    company: "Asurion",
+    jobPosition: "Software Engineer",
+    description:
+      "Developed and maintained mobile and web applications for Asurion's same-day repair and delivery network.",
+  },
+  {
+    startYear: "2020",
+    endYear: "2020",
+    company: "BenitoLink",
+    jobPosition: "Web Development Intern",
+    description:
+      "Designed and implemented new features for a local news website serving the residents of San Benito County.",
+  },
+  {
+    startYear: "2017",
+    endYear: "2021",
+    company: "UC Santa Cruz",
+    jobPosition: "Deli Clerk / Student Supervisor / Ramen Cook / TA",
+    description:
+      "Obtained a Bachelor of Science in Computer Science. Activities: Nikkei Student Union, Scuba Club.",
+  },
+];
