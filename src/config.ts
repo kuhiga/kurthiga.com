@@ -43,7 +43,7 @@ export const Config: IConfig = {
     },
     TalkStoryEnglish: {
       url: "https://talkstoryenglish.com/en",
-      tags: ["typescript", "astro", "contentful", "deno deploy", "resend"],
+      tags: ["typescript", "astro", "contentful", "deno", "resend"],
     },
     "Luna Masonry": {
       url: "https://luna-masonry.com/",
